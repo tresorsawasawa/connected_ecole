@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 
 import styles from '../styles';
-import navLinks from '../utils/data';
+import { navLinks } from '../utils/data';
 import Logo from '../assets/ConnectedLogo.png'
 
 const Navbar = () => {

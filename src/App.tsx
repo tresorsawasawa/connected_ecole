@@ -6,7 +6,9 @@ const App: React.FC = () => {
   return (
     <>
       <Navbar />
-      <Home />
+      <main>
+        <Home />
+      </main>
     </>
   )
 }
