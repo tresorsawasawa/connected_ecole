@@ -1,14 +1,15 @@
-import { createBrowserRouter } from 'react-router-dom';
+import React from 'react'
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import NotFound from './pages/NotFound';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Home />,
-    errorElement: <NotFound />,
-    children: [],
-  },
-]);
+const App: React.FC = () => {
+  return (
+    <>
+      <Navbar />
+      <Home />
+    </>
+  )
+}
 
-export default router;
+export default App
+
