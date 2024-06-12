@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 
 import styles from '../styles';
-import navLinks from '../utils/data';
+import { navLinks } from '../utils/data';
 import Logo from '../assets/ConnectedLogo.png'
 
 const Navbar = () => {
@@ -22,7 +22,7 @@ const Navbar = () => {
   console.log(style);  
 
   return (
-    <header className={`${styles.paddingX}`}>
+    <header className={`${styles.paddingX} z-20`}>
       <nav className="navbar w-full flex justify-between items-center max-w-7xl mx-auto">
         <div className="logoContainer w-[5rem] h-[5rem]">
           <Link

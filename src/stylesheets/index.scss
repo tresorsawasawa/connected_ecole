@@ -9,4 +9,46 @@
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #0d1117;
+}
+
+.typing-text {
+  white-space: nowrap;
+}
+
+.cursor {
+  font-size: 1.5rem;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.scroll-to-top-button {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  background: rgb(5, 5, 75);
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+
+  &.visible {
+    opacity: 1;
+  }
 }
