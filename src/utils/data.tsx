@@ -1,17 +1,21 @@
 import { v4 as uuid } from 'uuid';
+import { FaFacebook, FaXTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa6';
 
 const navLinks = [
   {
     id: uuid(),
-    title: 'about'
+    title: 'Home',
+    path: '/',
   },
   {
     id: uuid(),
-    title: 'home'
+    title: 'About',
+    path: '/',
   },
   {
     id: uuid(),
-    title: 'home'
+    title: 'Contact Us',
+    path: '/',
   },
 ]
 
@@ -33,8 +37,36 @@ const homeCardsData = [
   }
 ]
 
+const socialData = [
+  {
+    id: uuid(),
+    name: 'Facebook',
+    icon: <FaFacebook className="text-[1.5rem]" />,
+    path: 'https://www.facebook.com/'
+  },
+  {
+    id: uuid(),
+    name: 'X',
+    icon: <FaXTwitter className="text-[1.5rem]" />,
+    path:'https://x.com/'
+  },
+  {
+    id: uuid(),
+    name: 'Linkedin',
+    icon: <FaLinkedin className="text-[1.5rem]" />,
+    path: 'https://linkedin.com'
+  },
+  {
+    id: uuid(),
+    name: 'Instagram',
+    icon: <FaInstagram className="text-[1.5rem]" />,
+    path: 'https://instagram.com'
+  }
+]
+
 export {
   navLinks,
-  homeCardsData
+  homeCardsData,
+  socialData
 };
 

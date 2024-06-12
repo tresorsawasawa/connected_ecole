@@ -22,7 +22,7 @@ const Navbar = () => {
   console.log(style);  
 
   return (
-    <header className={`${styles.paddingX}`}>
+    <header className={`${styles.paddingX} z-20`}>
       <nav className="navbar w-full flex justify-between items-center max-w-7xl mx-auto">
         <div className="logoContainer w-[5rem] h-[5rem]">
           <Link
